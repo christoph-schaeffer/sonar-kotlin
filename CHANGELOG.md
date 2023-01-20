@@ -1,5 +1,11 @@
 # Detekt - Changelog
 
+#### 2.6.0 - 2023-01-20
+
+##### Changelog
+
+- Based on detekt 1.22.0
+
 #### 2.5.0 - 2022-01-09
 
 ##### Changelog

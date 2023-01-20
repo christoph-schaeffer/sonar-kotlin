@@ -1,17 +1,17 @@
 package io.gitlab.arturbosch.detekt.sonar.rules
 
-import io.github.detekt.tooling.api.DefaultConfigurationProvider
 import io.gitlab.arturbosch.detekt.api.BaseRule
 import io.gitlab.arturbosch.detekt.api.Config
 import io.gitlab.arturbosch.detekt.api.Issue
 import io.gitlab.arturbosch.detekt.api.MultiRule
 import io.gitlab.arturbosch.detekt.api.Rule
 import io.gitlab.arturbosch.detekt.api.RuleSetProvider
+import io.gitlab.arturbosch.detekt.core.tooling.DefaultConfigProvider
 import io.gitlab.arturbosch.detekt.sonar.foundation.REPOSITORY_KEY
 import org.sonar.api.rule.RuleKey
 import java.util.ServiceLoader
 
-internal val defaultConfig: Config = DefaultConfigurationProvider.load().get()
+internal val defaultConfig: Config = DefaultConfigProvider().get()
 
 /**
  * Exclude similar or duplicated rule implementations from other rule sets than the default one.
